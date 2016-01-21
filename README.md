@@ -43,7 +43,11 @@ These statistics are computed for the following things:
 
 3. The transmission delay in seconds: average, median, standard deviation and average absolute deviation. We assume, as in Project 1, that the server can transmit at 10 Megabits per second. Suppose we have n client request for URIs u1, ..., un, wherethe size of ui is si. Then, the command-line input, bias, causes the size of ui to be treated as si + ri, for some random r which is defineed for all (-2^bias, 2^bias)
 
+Bias: We use the bias parameter to inject a random component into the transmission delay. If the bias is b, then we incorporate an integer value represented by a b-bit value, as the random component. That is, rather than assuming that the size of a URI served is s, we first generate a random number r between -2^b and 2^b, excluding those end-pooints -2^b and 2^b. We assume that the size of the URI is s+r when computing the transmission delay.
 
+The code is modularized as follows:
 
-
+ece150-proj2-main.cpp: this file contains main().
+ece150-proj2-stats.cpp: this file contains the average, standard deviation, median, and absolute standard deviation functions.
+ece150-proj2-helper.cpp: this file contains the random number generator.
 
