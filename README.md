@@ -11,13 +11,13 @@ User input: When your program runs, it takes user-input, which is a sequence of 
 
 An example of user-input is the following sequence of lines:
 
-ftp://ftpserver.abc.edu:8080 
-http://example.com/object1 
-http://example.another.com/repo/objects/1
-http://example.another.com/repo/objects/1 
-http://example.another.com/repo/objects/1 
-http://example.another.com/repo/objects/1 
-exit 
+1. ftp://ftpserver.abc.edu:8080 
+2. http://example.com/object1 
+3. http://example.another.com/repo/objects/1
+4. http://example.another.com/repo/objects/1 
+5. http://example.another.com/repo/objects/1 
+6. http://example.another.com/repo/objects/1 
+7. exit 
 
 In this example, we have 6 client-requests. The last 4 are for the same URI.
 
@@ -47,7 +47,9 @@ Bias: We use the bias parameter to inject a random component into the transmissi
 
 The code is modularized as follows:
 
-ece150-proj2-main.cpp: this file contains main().
-ece150-proj2-stats.cpp: this file contains the average, standard deviation, median, and absolute standard deviation functions.
-ece150-proj2-helper.cpp: this file contains the random number generator.
+1. ece150-proj2-main.cpp: this file contains main().
+
+2. ece150-proj2-stats.cpp: this file contains the average, standard deviation, median, and absolute standard deviation functions.
+
+3. ece150-proj2-helper.cpp: this file contains the random number generator.
 
