@@ -23,17 +23,10 @@ In this example, we have 6 client-requests. The last 4 are for the same URI.
 
 The following statistics are computed:
 
-1. Average: 
-Given n values x1, ... , xn, the average of those values is: (1/n) times the sum from i = 1 to n of xi.
-
-2. Median:
-Given n values x1, ..., xn, the median of those values is the middlemost value when the values are in sorted order an n is odd. If n is even, it is the average of the middle two values when the values are in sorted order.
-
-3. Standard Deviation:
-Given n values x1, ... , xn, let their average be x bar. then the standard devaition is the square root of [(1/n) times the sum from i = 1 to n of (xi - x bar)].
-
-4. Average Absolute Deviation:
-Given n values x1, ... , xn, let their median be m. Then, the average absolute deviation is: (1/n) times the sum from i = 1 to n of the absolute value of (xi - m).
+1. Average
+2. Median
+3. Standard Deviation
+4. Average Absolute Deviation
 
 These statistics are computed for the following things:
 
@@ -41,7 +34,7 @@ These statistics are computed for the following things:
 
 2. The prioity of URI served: average, median, standard deviation and average absolute deviation.
 
-3. The transmission delay in seconds: average, median, standard deviation and average absolute deviation. We assume, as in Project 1, that the server can transmit at 10 Megabits per second. Suppose we have n client request for URIs u1, ..., un, where the size of ui is si. Then, the command-line input, bias, causes the size of ui to be treated as si + ri, for some random r which is defined for all (-2^bias, 2^bias)
+3. The transmission delay in seconds: average, median, standard deviation and average absolute deviation. We assume, as in Project 1, that the server can transmit at 10 Megabits per second.
 
 Bias: We use the bias parameter to inject a random component into the transmission delay. If the bias is b, then we incorporate an integer value represented by a b-bit value, as the random component. That is, rather than assuming that the size of a URI served is s, we first generate a random number r between -2^b and 2^b, excluding those end-pooints -2^b and 2^b. We assume that the size of the URI is s+r when computing the transmission delay.
 
